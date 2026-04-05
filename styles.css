@@ -1,0 +1,183 @@
+/* GOOGLE FONTS (PREMIUM) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap');
+
+/* FULL PAGE RESET */
+[data-testid="stApp"] {
+    background: linear-gradient(135deg, #050b18, #020409);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* REMOVE STREAMLIT HEADER */
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+/* MAIN CONTENT WIDTH */
+.block-container {
+    max-width: 1400px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* HERO TITLE */
+h1 {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 60px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffffff, #bca7a7, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text; /* Added for compatibility */
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* SUBTITLE */
+p {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #c7d2ff;
+}
+
+/* FORM CARD */
+[data-testid="stVerticalBlock"] {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+}
+
+/* SLIDER LABEL */
+label {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #ffffff !important;
+}
+
+/* SLIDER TRACK */
+[data-testid="stSlider"] > div {
+    background: transparent;
+}
+
+/* SLIDER BAR */
+[data-testid="stSlider"] span {
+    background: linear-gradient(90deg, #0e0e0e, #0e0e0e);
+}
+
+/* SELECT BOX */
+[data-testid="stSelectbox"] > div {
+    font-family: 'Inter', sans-serif;
+    background: rgba(255,255,255,0.15);
+    border-radius: 14px;
+    color: white;
+}
+
+/* BUTTON */
+.stButton > button {
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(135deg, #00eaff, #0050ff);
+    border-radius: 50px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.stButton > button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0,234,255,0.9);
+}
+
+/* ALERT STYLE */
+[data-testid="stAlert"] {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    border-radius: 14px;
+}
+
+/* RESULT CARD */
+.result-card {
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0,234,255,0.15), rgba(0,80,255,0.15));
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 50px rgba(0,234,255,0.6);
+    animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.result-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #c7f9ff;
+    margin-bottom: 10px;
+}
+
+.result-score {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text; /* Added compatibility */
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+}
+
+/* RISK TEXT BELOW SCORE */
+.risk-text {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #e9fffa;
+}
+
+/* GAUGE BAR */
+.gauge-container {
+    width: 100%;
+    height: 18px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    border: 1px solid #00eaff60;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.gauge {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-out;
+}
+/* STYLE FOR STUDENT NAME INPUT */
+input[type="text"] {
+    background: rgba(255,255,255,0.12) !important;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 14px !important;
+    padding: 14px !important;
+    border: 1px solid rgba(0,234,255,0.3) !important;
+    font-size: 18px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+input[type="text"]:focus {
+    border-color: #00eaff !important;
+    box-shadow: 0 0 12px rgba(0,234,255,0.7) !important;
+    outline: none !important;
+}
+
